@@ -1,0 +1,10 @@
+{
+  "168f14c5547": {
+    "path": "Scene\\MainScene.ts",
+    "class": "MainScene",
+    "parentPath": ""
+  },
+  "global": {
+    "globalAutoLayerMarkEnable": true
+  }
+}

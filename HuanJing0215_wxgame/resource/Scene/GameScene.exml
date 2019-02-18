@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GameSceneSkin" width="640" height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="168f14caf1e" ></w:Config>
+	<e:Group id="gamePanel" left="0" right="0" top="0" bottom="0">
+		<e:Image id="imgBg" left="0" right="0" top="0" bottom="0" source="bg3_png"/>
+		<e:Label id="scoreLabel" text="0" x="294.5" y="30" size="90"/>
+		<e:Image id="player" x="320" y="748" width="128" height="128" anchorOffsetX="64" anchorOffsetY="120" scaleX="1" source="characters_02_png"/>
+	</e:Group>
+	<e:Group id="overPanel" left="0" right="0" top="0" bottom="0" visible="false">
+		<e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0.5"/>
+		<e:Label text="本次得分" x="180" y="198" verticalAlign="middle" textAlign="center" size="60" anchorOffsetX="0" width="280" anchorOffsetY="0" height="82" textColor="0x0affea"/>
+		<e:Label id="overScoreLabel" text="0" x="294.5" y="406" size="90" textColor="0xff0000"/>
+		<e:Button id="btnRestart" label="再来一局" x="88" y="906" anchorOffsetX="0" width="184" anchorOffsetY="0" height="92"/>
+		<e:Button id="btnChangePlayer" label="切换角色" x="368" y="906" anchorOffsetX="0" width="184" anchorOffsetY="0" height="92"/>
+	</e:Group>
+	<e:Button id="btnSoundOn" label="" x="48" y="48" width="100" height="100">
+		<e:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="soundIcons_01_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="btnSoundOff" label="" x="48" y="48" width="100" height="100" visible="false">
+		<e:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="soundIcons_02_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Group id="showPanel" left="0" right="0" top="0" bottom="0" visible="false">
+		<e:Rect left="0" right="0" top="0" bottom="0"/>
+		<e:Button id="btnBack" label="" x="50" y="50" width="100" height="100">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="back_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Image id="show" source="characters_01_png" x="64" y="280" width="512" height="512"/>
+		<e:Image id="default" source="characters_01_png" x="16" y="920" width="128" height="128"/>
+		<e:Image id="ninja" source="characters_03_png" x="176" y="920" width="128" height="128"/>
+		<e:Image id="hobbit" source="characters_05_png" x="336" y="920" width="128" height="128"/>
+		<e:Image id="zombie" source="characters_07_png" x="496" y="920" width="128" height="128"/>
+	</e:Group>
+</e:Skin>
